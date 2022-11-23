@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AngularJS.Core" Version="1.8.2" />
+    <PackageReference Include="AngularJS.Route" Version="1.8.2" />
     <PackageReference Include="Duende.IdentityServer.AspNetIdentity" Version="6.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
@@ -15,6 +17,17 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\angularJs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\angularJs\angular-mocks.js" />
+    <None Include="wwwroot\angularJs\angular.js" />
+    <None Include="wwwroot\angularJs\angular.min.js" />
+    <None Include="wwwroot\angularJs\angular.min.js.map" />
   </ItemGroup>
 
 </Project>

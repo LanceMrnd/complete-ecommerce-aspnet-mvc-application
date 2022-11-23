@@ -4,7 +4,7 @@
     ViewData["Title"] = "List of Movies";
 }
 
-<div class="row">
+<div class="row" ng-app>
     @foreach (var item in Model)
     {
         <div class="col-md-4 col-xs-6 border-primary mb-3">
@@ -73,7 +73,7 @@
         </div>
     }
 </div>
-
-
+<script src="~/angularjs/angular.min.js"></script>
+<script src="~/angularjs/angular.js"></script>
 @await Html.PartialAsync("CreateItem", "Movies")
 
